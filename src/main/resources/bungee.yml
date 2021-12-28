@@ -1,0 +1,4 @@
+name: DraelCraftBungee
+version: ${project.version}
+main: net.kz_n.draelcraftbungee.DraelCraftBungee
+description: Utilities for DraelCraft in a network wide level

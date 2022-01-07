@@ -1,6 +1,7 @@
 package net.kz_n.draelcraftbungee.command;
 
 import net.kz_n.draelcraftbungee.util.MessagingUtils;
+import net.kz_n.draelcraftbungee.util.PluginMessageUtils;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -22,5 +23,7 @@ public class DiscordCommand extends Command {
                 "https://www.draelcraft.net/discord",
                 "Opens the link to our discord in your web browser.");
         sender.sendMessage(messageComponent);
+        PluginMessageUtils.sendCustomData(((ProxiedPlayer) sender),"dcb:connections",
+                "sdeadf");
     }
 }
